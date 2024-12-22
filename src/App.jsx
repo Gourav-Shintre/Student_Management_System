@@ -3,7 +3,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Home from "./pages/Home";
 import Student_Form from "./components/Form/Student_Form";
 import EditStudent from "./components/Form/EditStudent";
-import Error from "../../Group_Management_Demo/src/pages/Error";
+
 function App() {
   const router = createBrowserRouter([
     {
@@ -18,10 +18,7 @@ function App() {
       path: "/update/:std_id",
       element: <EditStudent />,
     },
-   {
-    path: "*",  
-    errorElement: <Error />, 
-  }
+
   ]);
 
   return (
